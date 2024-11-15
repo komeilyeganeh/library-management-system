@@ -1,0 +1,66 @@
+<%- include('./includes/head.ejs') %>
+<link rel="stylesheet" href="/global.css" />
+<link rel="stylesheet" href="/card.css" />
+</head>
+<body>
+    <%- include('./includes/navigation.ejs') %>
+    <main>
+        <div class="container">
+            <div class="img__wrapper">
+                <img src="/images/bg.jpeg" alt="bg image" class="bg-img-home"/>
+                <div class="img__wrapper_text">
+                    <h2>Library</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    <a href="/books" class="more__books_link">View Books</a>
+                </div>
+            </div>
+            <div class="books__wrapper">
+                <div class="card">
+                    <img src="/images/book.png" alt="">
+                    <div class="card__body">
+                        <h3><a href="/book/:id">Book Name</a></h3>
+                        <div class="card__footer">
+                            <span>Autho</span>
+                            <span>250 pages</span>
+                            <span>$500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/book.png" alt="">
+                    <div class="card__body">
+                        <h3><a href="/book/:id">Book Name</a></h3>
+                        <div class="card__footer">
+                            <span>Autho</span>
+                            <span>250 pages</span>
+                            <span>$500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/book.png" alt="">
+                    <div class="card__body">
+                        <h3><a href="/book/:id">Book Name</a></h3>
+                        <div class="card__footer">
+                            <span>Autho</span>
+                            <span>250 pages</span>
+                            <span>$500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/book.png" alt="">
+                    <div class="card__body">
+                        <h3><a href="/book/:id">Book Name</a></h3>
+                        <div class="card__footer">
+                            <span>Autho</span>
+                            <span>250 pages</span>
+                            <span>$500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

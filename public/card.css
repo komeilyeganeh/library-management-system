@@ -1,0 +1,28 @@
+.card {
+    width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 2px solid var(--color-primary);
+}
+.card img {
+    width: 100%;
+}
+.card__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.card__body h3 a {
+    color: var(--color-dark);
+}
+.card__footer {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .9rem;
+}
