@@ -1,13 +1,14 @@
 // :::: import express ::::
-import { Router } from "express";
+import express from "express";
 
 // :::: controllers ::::
-import { getHomePage } from "../controllers/books.js";
+import { getAddBookPage, postAddBook } from "../controllers/books.js";
 
 // :::: define express router ::::
-const router = Router();
+const router = express.Router();
 
 // :::: list of routes ::::
-router.get("/", getHomePage);
+router.get("/add-book", getAddBookPage);
+router.post("/add-book", postAddBook);
 
 export default router;
