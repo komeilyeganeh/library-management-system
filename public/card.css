@@ -26,3 +26,25 @@
     justify-content: space-between;
     font-size: .9rem;
 }
+.card__detail {
+    display: flex;
+    align-items: start;
+    width: 900px;
+    max-width: 95%;
+    column-gap: 10px;
+}
+.card__detail_footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: start;
+}
+.card__desc {
+    text-align: justify;
+}
+@media screen and (max-width: 572px) {
+    .card__detail {
+        flex-direction: column;
+        align-items: center;
+    }
+}

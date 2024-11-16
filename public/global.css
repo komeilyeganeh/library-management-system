@@ -80,3 +80,13 @@ input {
     justify-content: center;
     flex-wrap: wrap;
 }
+.books__title {
+  text-align: center;
+  margin-top: 20px;
+}
+.not__found_book {
+  padding: 5px 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.09);
+  color: red;
+}

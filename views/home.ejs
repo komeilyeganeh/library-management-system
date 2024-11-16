@@ -15,50 +15,24 @@
                 </div>
             </div>
             <div class="books__wrapper">
-                <div class="card">
-                    <img src="/images/book.png" alt="">
-                    <div class="card__body">
-                        <h3><a href="/book/:id">Book Name</a></h3>
-                        <div class="card__footer">
-                            <span>Autho</span>
-                            <span>250 pages</span>
-                            <span>$500</span>
+                <% if (books && books.length > 0) { %>
+                    <% for (let book of books) { %>
+                        <div class="card">
+                            <img src="/images/book.png" alt="book image">
+                            <div class="card__body">
+                                <h3><a href="/book/<%= book.id %>"><%= book.bookName %></a></h3>
+                                <div class="card__footer">
+                                    <span><%= book.bookAuthor %></span>
+                                    <span><%= book.bookPage %> pages</span>
+                                    <span>$<%= book.bookPrice %></span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/images/book.png" alt="">
-                    <div class="card__body">
-                        <h3><a href="/book/:id">Book Name</a></h3>
-                        <div class="card__footer">
-                            <span>Autho</span>
-                            <span>250 pages</span>
-                            <span>$500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/images/book.png" alt="">
-                    <div class="card__body">
-                        <h3><a href="/book/:id">Book Name</a></h3>
-                        <div class="card__footer">
-                            <span>Autho</span>
-                            <span>250 pages</span>
-                            <span>$500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/images/book.png" alt="">
-                    <div class="card__body">
-                        <h3><a href="/book/:id">Book Name</a></h3>
-                        <div class="card__footer">
-                            <span>Autho</span>
-                            <span>250 pages</span>
-                            <span>$500</span>
-                        </div>
-                    </div>
-                </div>
+                    <% } %>
+                <% } else { %>
+                    <p class="not__found_book">The book was not found. Please add a book</p>
+                    <% } %>
+                
             </div>
         </div>
     </main>
