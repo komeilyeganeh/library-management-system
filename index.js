@@ -5,15 +5,16 @@ import { fileURLToPath } from "url";
 
 import bodyParser from "body-parser";
 import { getHomePage } from "./controllers/books.js";
+import { sequelize } from "./utils/database.js";
 
 // :::: import routes ::::
 import router from "./routes/routes.js";
 
 // :::: create express app ::::
 const app = express();
-const __filename = fileURLToPath(import.meta.url)
+const __filename = fileURLToPath(import.meta.url);
 app.use(express.static(path.join(path.dirname(__filename), "public")));
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // :::: set view engine ::::
 app.set("view engine", "ejs");
@@ -24,4 +25,11 @@ app.use(router);
 app.get("/", getHomePage);
 
 // :::: required port to listening ::::
-app.listen(4000);
+sequelize
+  .sync()
+  .then(() => {
+    app.listen(4000);
+  })
+  .catch((err) => {
+    console.log(err);
+  });

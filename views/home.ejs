@@ -20,11 +20,11 @@
                         <div class="card">
                             <img src="/images/book.png" alt="book image">
                             <div class="card__body">
-                                <h3><a href="/book/<%= book.id %>"><%= book.bookName %></a></h3>
+                                <h3><a href="/book/<%= book.id %>"><%= book.title %></a></h3>
                                 <div class="card__footer">
-                                    <span><%= book.bookAuthor %></span>
-                                    <span><%= book.bookPage %> pages</span>
-                                    <span>$<%= book.bookPrice %></span>
+                                    <span><%= book.authorName %></span>
+                                    <span><%= book.pages %> pages</span>
+                                    <span>$<%= book.price %></span>
                                 </div>
                             </div>
                         </div>
