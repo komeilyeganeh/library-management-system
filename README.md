@@ -7,16 +7,16 @@ npm start
 ---
 ### Images :
 #### Home page
-![Image](./1.PNG)
+![Image](./1.png)
 =
 #### Add book :
-![Image](./2.PNG)
+![Image](./2.png)
 =
 #### Books :
-![Image](./3.PNG)
+![Image](./3.png)
 =
 #### Book Detail
-![Image](./4.PNG)
+![Image](./4.png)
 =
 ### Technologies :
 ```
