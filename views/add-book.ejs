@@ -15,6 +15,9 @@
                 name="bookPages">
             <input type="text" placeholder="Book Price" 
                 name="bookPrice">
+            <% if (error) { %>
+                <p class="error-text"><%= error %></p>
+            <% } %>
             <button type="submit">Add</button>
         </form>
     </div>

@@ -90,3 +90,6 @@ input {
   background-color: rgba(255, 0, 0, 0.09);
   color: red;
 }
+.error-text {
+  color: red;
+}
